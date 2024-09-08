@@ -2,16 +2,37 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { useNavigate } from 'react-router-dom';
 
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (email) {
-      console.log('E-post skickad:', email);
-      toast.success("Tack för att du ansluter dig till vår äventyrliga resa!");
-      setEmail('');
+      setIsLoading(true);
+      try {
+        const response = await fetch('http://localhost:3001/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+        
+        if (response.ok) {
+          toast.success("Tack för din registrering!");
+          navigate('/confirmation');
+        } else {
+          throw new Error('Registrering misslyckades');
+        }
+      } catch (error) {
+        toast.error("Ett fel uppstod. Försök igen senare.");
+      } finally {
+        setIsLoading(false);
+      }
     } else {
       toast.error("Vänligen ange en giltig e-postadress.");
     }
@@ -25,9 +46,10 @@ const EmailSignup = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="w-full bg-white/20 text-white placeholder-teal-100 border-teal-200 focus:border-teal-300"
+        disabled={isLoading}
       />
-      <Button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white">
-        Anslut till äventyret
+      <Button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white" disabled={isLoading}>
+        {isLoading ? 'Registrerar...' : 'Anslut till äventyret'}
       </Button>
     </form>
   );
