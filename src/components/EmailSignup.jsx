@@ -9,9 +9,8 @@ const EmailSignup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      // Here you would typically send the email to your backend
       console.log('Email submitted:', email);
-      toast.success("Thank you for signing up!");
+      toast.success("Thank you for joining our dreamy journey!");
       setEmail('');
     } else {
       toast.error("Please enter a valid email address.");
@@ -25,10 +24,10 @@ const EmailSignup = () => {
         placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-64 bg-white bg-opacity-20 text-white placeholder-gray-300"
+        className="w-full bg-white/20 text-white placeholder-teal-100 border-teal-200 focus:border-teal-300"
       />
-      <Button type="submit" className="w-64">
-        Sign Up
+      <Button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white">
+        Join the Dream
       </Button>
     </form>
   );
