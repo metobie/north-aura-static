@@ -22,6 +22,9 @@ const Index = () => {
           <EmailSignup />
         </div>
       </div>
+      <div className="absolute bottom-2 right-2 text-xs text-white/30 hover:text-white/60 transition-colors duration-300">
+        <p>Psst! Vill du viska en hemlighet? <a href="mailto:hej@overlandsoul.se" className="underline">hej@overlandsoul.se</a></p>
+      </div>
     </div>
   );
 };
