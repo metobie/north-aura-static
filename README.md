@@ -1,72 +1,68 @@
-# Welcome to your GPT Engineer project
+# Overland Soul
 
-## Project info
+## Projektinformation
 
-**Project**: dreamy-video-signup
+**Projekt**: dreamy-video-signup
 
 **URL**: https://run.gptengineer.app/projects/1d7d4776-3276-4226-b337-742d3343c98f/improve
 
-## How can I edit this code?
+## Hur kör jag detta projekt lokalt?
 
-There are several ways of editing your application.
+För att köra och utveckla detta projekt lokalt, följ dessa steg:
 
-**Use GPT Engineer**
+1. Klona repositoryt:
+   ```
+   git clone <DITT_REPO_URL>
+   ```
 
-Simply visit the GPT Engineer project at [GPT Engineer](https://gptengineer.app/projects/1d7d4776-3276-4226-b337-742d3343c98f/improve) and start prompting.
+2. Navigera till projektmappen:
+   ```
+   cd dreamy-video-signup
+   ```
 
-Changes made via gptengineer.app will be committed automatically to this repo.
+3. Installera beroenden:
+   ```
+   npm install
+   ```
 
-**Use your preferred IDE**
+4. Starta utvecklingsservern:
+   ```
+   npm run dev
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the GPT Engineer UI.
+5. Öppna din webbläsare och gå till `http://localhost:5173` (eller den port som Vite anger).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Teknologier som används i detta projekt
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
+Detta projekt är byggt med:
 
 - Vite
 - React
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Hur kan jag distribuera detta projekt?
 
-All GPT Engineer projects can be deployed directly via the GPT Engineer app.
+Alla GPT Engineer-projekt kan distribueras direkt via GPT Engineer-appen.
 
-Simply visit your project at [GPT Engineer](https://gptengineer.app/projects/1d7d4776-3276-4226-b337-742d3343c98f/improve) and click on Share -> Publish.
+Besök ditt projekt på [GPT Engineer](https://gptengineer.app/projects/1d7d4776-3276-4226-b337-742d3343c98f/improve) och klicka på Dela -> Publicera.
 
-## I want to use a custom domain - is that possible?
+## Kan jag använda en anpassad domän?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.gptengineer.app/tips-tricks/custom-domain/)
+För närvarande stöder vi inte anpassade domäner direkt. Om du vill distribuera ditt projekt under din egen domän rekommenderar vi att du använder Netlify. Besök vår dokumentation för mer information: [Anpassade domäner](https://docs.gptengineer.app/tips-tricks/custom-domain/)
+
+## Hur kan jag redigera denna kod?
+
+Det finns flera sätt att redigera din applikation:
+
+1. **Använd GPT Engineer**
+   Besök GPT Engineer-projektet på [GPT Engineer](https://gptengineer.app/projects/1d7d4776-3276-4226-b337-742d3343c98f/improve) och börja ge instruktioner.
+
+2. **Använd din föredragna IDE**
+   Klona detta repo och push:a ändringar. Ändringar som push:as kommer också att reflekteras i GPT Engineer-gränssnittet.
+
+3. **Redigera en fil direkt på GitHub**
+   Navigera till önskad fil, klicka på "Redigera" (pennikon) och gör dina ändringar.
+
+4. **Använd GitHub Codespaces**
+   Starta en ny Codespace-miljö direkt från GitHub-repositoryt.
