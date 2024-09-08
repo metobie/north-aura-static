@@ -17,8 +17,8 @@ const Index = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-teal-500/40 via-purple-400/30 to-pink-300/40" />
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl max-w-md w-full">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Dreamy Nature Stories</h1>
-          <p className="text-lg sm:text-xl text-teal-50 mb-8">Immerse yourself in enchanting tales of nature</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
+          <p className="text-lg sm:text-xl text-teal-50 mb-8">Embark on extraordinary journeys across breathtaking landscapes</p>
           <EmailSignup />
         </div>
       </div>
