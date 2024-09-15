@@ -18,7 +18,6 @@ const Index = () => {
           </div>
           
           <div className="bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full lg:w-1/2 p-8 text-white">
-            <h2 className="text-2xl font-semibold mb-4">Välkommen till Overland Soul</h2>
             <p className="mb-4">Kära kund,</p>
             <p className="mb-4">Vi är glada att du har hittat till Overland Soul och ser fram emot att välkomna dig till vår gemenskap.</p>
             <p className="mb-4">Overland Soul grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på taket. Nu vill vi dela denna frihet och upplevelse med dig.</p>
