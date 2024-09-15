@@ -62,42 +62,18 @@ const Index = () => {
             >
               Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.
             </motion.p>
-            <motion.div
-              className="bg-[#97a09f]/80 p-4 rounded-lg shadow-lg mb-8"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+            <motion.p 
+              className="text-lg font-semibold text-white mb-8"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              whileHover={{ scale: 1.05, backgroundColor: "#97a09f" }}
             >
-              <motion.p 
-                className="text-lg font-semibold text-white"
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.8 }}
-              >
-                🎉 Exklusivt Erbjudande! 🎉
-              </motion.p>
-              <motion.p 
-                className="text-xl font-bold text-white mt-2"
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.9 }}
-              >
-                Signa upp nu och få 10% rabatt
-              </motion.p>
-              <motion.p 
-                className="text-sm text-white mt-1"
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 1 }}
-              >
-                på din första beställning när vi öppnar webbshoppen
-              </motion.p>
-            </motion.div>
+              Signa upp nu och få 10% rabatt på din första beställning när vi öppnar webbshoppen
+            </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
             >
               <EmailSignup />
             </motion.div>
@@ -108,7 +84,7 @@ const Index = () => {
         className="absolute bottom-4 right-4 flex space-x-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.2 }}
+        transition={{ duration: 0.5, delay: 1 }}
       >
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
           <Facebook size={24} />
