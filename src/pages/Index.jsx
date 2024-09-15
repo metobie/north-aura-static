@@ -12,8 +12,8 @@ const Index = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
           <div className="text-center p-8 bg-[#c5cabd]/20 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
-            <p className="text-lg sm:text-xl text-white mb-8">
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
+            <p className="text-base sm:text-lg text-white mb-8">
               Äventyr väntar på taket! Vårt team är just nu utomlands och finsliper de sista detaljerna med designers och ingenjörer inför massproduktion av våra revolutionerande taktält. Signa upp nu och få 10% rabatt på din beställning inom 3 månader efter lansering. Psst... ännu större besparingar väntar för dig som gör en pre-order när vi öppnar webbshoppen och avslöjar våra fantastiska produktbilder. Missa inte chansen att bli först med det senaste inom overlanding!
             </p>
             <EmailSignup />
