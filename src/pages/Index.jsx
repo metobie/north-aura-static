@@ -1,7 +1,6 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
 import { Facebook, Instagram, Mail } from 'lucide-react';
-import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
@@ -25,8 +24,7 @@ const Index = () => {
             <p className="mb-4">Overland Soul grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på taket. Nu vill vi dela denna frihet och upplevelse med dig.</p>
             <p className="mb-4">Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.</p>
             <p className="mb-4">Varmt välkommen till Overland Soul!</p>
-            <p className="mb-4">Med vänliga hälsningar,<br />Overland Soul Familjen</p>
-            <Button className="mt-4 bg-teal-500 hover:bg-teal-600 text-white">Läs mer om vår historia</Button>
+            <p>Med vänliga hälsningar,<br />Overland Soul Familjen</p>
           </div>
         </div>
       </div>
