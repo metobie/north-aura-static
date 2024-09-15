@@ -6,9 +6,21 @@ import { motion } from 'framer-motion';
 const Index = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#d5d9c8] to-[#97a09f]">
+      <style>
+        {`
+          @keyframes panBackground {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 0%; }
+          }
+        `}
+      </style>
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70"
-        style={{ backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)' }}
+        style={{ 
+          backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
+          animation: 'panBackground 60s linear infinite alternate',
+          backgroundSize: '120% auto'
+        }}
       />
       <div className="absolute top-4 right-4 z-20">
         <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 h-auto" />
