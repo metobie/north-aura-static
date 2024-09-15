@@ -17,7 +17,7 @@ const Index = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70"
         style={{ 
-          backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
+          backgroundImage: 'url(https://i.imgur.com/5cPVzTo.jpeg)',
           animation: 'panBackground 60s linear infinite alternate',
           backgroundSize: '120% auto'
         }}
