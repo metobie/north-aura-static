@@ -9,12 +9,12 @@ const Confirmation = () => {
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-50"
         style={{ backgroundImage: 'url(https://i.imgur.com/mTlhsuD.jpeg)' }}
       />
-      <div className="relative z-10 text-center p-8 bg-[#c5cabd]/60 backdrop-blur-sm rounded-lg shadow-xl max-w-md w-full">
-        <h1 className="text-3xl font-bold text-[#97a09f] mb-4">Tack för din registrering!</h1>
-        <p className="text-lg text-[#97a09f] mb-6">
+      <div className="relative z-10 text-center p-8 bg-[#c5cabd]/40 backdrop-blur-sm rounded-lg shadow-xl max-w-md w-full">
+        <h1 className="text-3xl font-bold text-white mb-4">Tack för din registrering!</h1>
+        <p className="text-lg text-white mb-6">
           Vi har skickat ett bekräftelsemail till din e-postadress. Kolla din inkorg (och eventuellt skräppostmappen) för mer information.
         </p>
-        <Button asChild className="bg-[#97a09f] hover:bg-[#a6aea9] text-[#d5d9c8]">
+        <Button asChild className="bg-[#97a09f] hover:bg-[#a6aea9] text-white">
           <Link to="/">Tillbaka till startsidan</Link>
         </Button>
       </div>

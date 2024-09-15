@@ -11,15 +11,15 @@ const Index = () => {
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
-          <div className="text-center p-8 bg-[#c5cabd]/60 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#97a09f] mb-6 tracking-wide">Overland Soul</h1>
-            <p className="text-lg sm:text-xl text-[#97a09f] mb-8">
+          <div className="text-center p-8 bg-[#c5cabd]/40 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
+            <p className="text-lg sm:text-xl text-white mb-8">
               Äventyr väntar på taket! Vårt team är just nu utomlands och finsliper de sista detaljerna med designers och ingenjörer inför massproduktion av våra revolutionerande taktält. Signa upp nu och få 10% rabatt på din beställning inom 3 månader efter lansering. Psst... ännu större besparingar väntar för dig som gör en pre-order när vi öppnar webbshoppen och avslöjar våra fantastiska produktbilder. Missa inte chansen att bli först med det senaste inom overlanding!
             </p>
             <EmailSignup />
           </div>
           
-          <div className="bg-[#b6bcb3]/60 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 p-8 text-[#97a09f]">
+          <div className="bg-[#b6bcb3]/40 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 p-8 text-white">
             <p className="mb-4">Kära kund,</p>
             <p className="mb-4">Vi är glada att du har hittat till Overland Soul och ser fram emot att välkomna dig till vår gemenskap.</p>
             <p className="mb-4">Overland Soul grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på taket. Nu vill vi dela denna frihet och upplevelse med dig.</p>
@@ -29,13 +29,13 @@ const Index = () => {
         </div>
       </div>
       <div className="absolute bottom-4 right-4 flex space-x-4">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#97a09f] hover:text-[#d5d9c8] transition-colors duration-300">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
           <Facebook size={24} />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#97a09f] hover:text-[#d5d9c8] transition-colors duration-300">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
           <Instagram size={24} />
         </a>
-        <a href="mailto:hej@overlandsoul.se" className="text-[#97a09f] hover:text-[#d5d9c8] transition-colors duration-300">
+        <a href="mailto:hej@overlandsoul.se" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
           <Mail size={24} />
         </a>
       </div>
