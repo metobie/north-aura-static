@@ -23,7 +23,7 @@ const Index = () => {
         }}
       />
       <div className="absolute top-4 right-4 z-20">
-        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 h-auto" />
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-32 h-auto" />
       </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
@@ -93,7 +93,7 @@ const Index = () => {
         </motion.div>
       </motion.div>
       <motion.div 
-        className="absolute bottom-4 right-4 flex space-x-4"
+        className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
