@@ -1,5 +1,6 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
+import { Facebook, Instagram, Mail } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -16,8 +17,16 @@ const Index = () => {
           <EmailSignup />
         </div>
       </div>
-      <div className="absolute bottom-4 right-4 text-sm text-white/70 hover:text-white transition-colors duration-300">
-        <p>Psst! Vill du viska en hemlighet? <a href="mailto:hej@overlandsoul.se" className="underline">hej@overlandsoul.se</a></p>
+      <div className="absolute bottom-4 right-4 flex space-x-4">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors duration-300">
+          <Facebook size={24} />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors duration-300">
+          <Instagram size={24} />
+        </a>
+        <a href="mailto:hej@overlandsoul.se" className="text-white/70 hover:text-white transition-colors duration-300">
+          <Mail size={24} />
+        </a>
       </div>
     </div>
   );
