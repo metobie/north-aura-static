@@ -39,16 +39,16 @@ const EmailSignup = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-4">
       <Input
         type="email"
         placeholder="Ange din e-postadress"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full bg-white/50 text-[#97a09f] placeholder-[#97a09f] border-[#97a09f] focus:border-[#97a09f]"
+        className="w-full sm:w-2/3 bg-white/50 text-[#97a09f] placeholder-[#97a09f] border-[#97a09f] focus:border-[#97a09f]"
         disabled={isLoading}
       />
-      <Button type="submit" className="w-full bg-[#97a09f] hover:bg-[#a6aea9] text-white" disabled={isLoading}>
+      <Button type="submit" className="w-full sm:w-1/3 bg-[#97a09f] hover:bg-[#a6aea9] text-white" disabled={isLoading}>
         {isLoading ? 'Registrerar...' : 'Anslut till äventyret'}
       </Button>
     </form>
