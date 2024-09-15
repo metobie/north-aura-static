@@ -5,16 +5,25 @@ import { motion } from 'framer-motion';
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#d5d9c8] to-[#97a09f]">
+    <div className="relative min-h-screen w-full overflow-hidden">
       <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70"
-        style={{ backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)' }}
+        className="absolute top-0 left-0 w-[120%] h-[120%] bg-cover bg-center bg-no-repeat opacity-70 animate-pan"
+        style={{ 
+          backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
+          animation: 'pan 40s linear infinite',
+        }}
       />
-      <div className="absolute top-4 right-4 z-20">
+      <div 
+        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#d5d9c8] to-[#97a09f] opacity-60 animate-gradient"
+        style={{
+          animation: 'gradient 15s ease infinite',
+        }}
+      />
+      <div className="absolute top-4 right-4 z-30">
         <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 h-auto" />
       </div>
       <motion.div 
-        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
+        className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -81,7 +90,7 @@ const Index = () => {
         </motion.div>
       </motion.div>
       <motion.div 
-        className="absolute bottom-4 right-4 flex space-x-4"
+        className="absolute bottom-4 right-4 flex space-x-4 z-30"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
@@ -96,6 +105,24 @@ const Index = () => {
           <Mail size={24} />
         </a>
       </motion.div>
+      <style jsx>{`
+        @keyframes pan {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(-10%, -10%); }
+        }
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-pan {
+          animation: pan 40s linear infinite;
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 15s ease infinite;
+        }
+      `}</style>
     </div>
   );
 };
