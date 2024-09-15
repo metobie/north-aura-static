@@ -14,7 +14,8 @@ const Index = () => {
           <div className="text-center p-8 bg-[#c5cabd]/20 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
             <p className="text-base text-white mb-8">
-              Äventyr väntar på taket! Vårt team är just nu utomlands och finsliper de sista detaljerna med designers och ingenjörer inför massproduktion av våra revolutionerande taktält. Signa upp nu och få 10% rabatt på din beställning inom 3 månader efter lansering. Psst... ännu större besparingar väntar för dig som gör en pre-order när vi öppnar webbshoppen och avslöjar våra fantastiska produktbilder. Missa inte chansen att bli först med det senaste inom overlanding!
+              Äventyr väntar på taket! Vårt team är just nu utomlands och finslipar de sista detaljerna med designers och ingenjörer inför massproduktion av våra revolutionerande taktält.<br /><br />
+              Signa upp nu och få 10% rabatt på din beställning inom 3 månader efter lansering. Psst... ännu större besparingar väntar för dig som gör en pre-order när vi öppnar webbshoppen och avslöjar våra fantastiska produktbilder. Missa inte chansen att bli först med det senaste inom overlanding!
             </p>
             <EmailSignup />
           </div>
