@@ -11,21 +11,23 @@ const Index = () => {
         style={{ backgroundImage: 'url(https://i.imgur.com/Pe1ftIK.jpeg)' }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
-        <div className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl max-w-md w-full mb-8 animate-float">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
-          <p className="text-lg sm:text-xl text-teal-50 mb-8">Ge dig ut på extraordinära resor genom hisnande landskap med våra taktält. Signa upp nu för ytterligare 10% rabbat när kollektionen släpps. Vi kontaktar dig när vi har lanserat!</p>
-          <EmailSignup />
-        </div>
-        
-        <div className="bg-white/10 backdrop-blur-md rounded-lg shadow-xl max-w-2xl w-full p-8 text-white">
-          <h2 className="text-2xl font-semibold mb-4">Välkommen till Overland Soul</h2>
-          <p className="mb-4">Kära kund,</p>
-          <p className="mb-4">Vi är glada att du har hittat till Overland Soul och ser fram emot att välkomna dig till vår gemenskap.</p>
-          <p className="mb-4">Overland Soul grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på taket. Nu vill vi dela denna frihet och upplevelse med dig.</p>
-          <p className="mb-4">Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.</p>
-          <p className="mb-4">Varmt välkommen till Overland Soul!</p>
-          <p className="mb-4">Med vänliga hälsningar,<br />Overland Soul Familjen</p>
-          <Button className="mt-4 bg-teal-500 hover:bg-teal-600 text-white">Läs mer om vår historia</Button>
+        <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
+          <div className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
+            <p className="text-lg sm:text-xl text-teal-50 mb-8">Ge dig ut på extraordinära resor genom hisnande landskap med våra taktält. Signa upp nu för ytterligare 10% rabbat när kollektionen släpps. Vi kontaktar dig när vi har lanserat!</p>
+            <EmailSignup />
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full lg:w-1/2 p-8 text-white">
+            <h2 className="text-2xl font-semibold mb-4">Välkommen till Overland Soul</h2>
+            <p className="mb-4">Kära kund,</p>
+            <p className="mb-4">Vi är glada att du har hittat till Overland Soul och ser fram emot att välkomna dig till vår gemenskap.</p>
+            <p className="mb-4">Overland Soul grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på taket. Nu vill vi dela denna frihet och upplevelse med dig.</p>
+            <p className="mb-4">Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.</p>
+            <p className="mb-4">Varmt välkommen till Overland Soul!</p>
+            <p className="mb-4">Med vänliga hälsningar,<br />Overland Soul Familjen</p>
+            <Button className="mt-4 bg-teal-500 hover:bg-teal-600 text-white">Läs mer om vår historia</Button>
+          </div>
         </div>
       </div>
       <div className="absolute bottom-4 right-4 flex space-x-4">
