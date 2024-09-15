@@ -45,10 +45,10 @@ const EmailSignup = () => {
         placeholder="Ange din e-postadress"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full bg-white/20 text-white placeholder-teal-100 border-teal-200 focus:border-teal-300"
+        className="w-full bg-[#a6aea9]/50 text-[#97a09f] placeholder-[#97a09f] border-[#97a09f] focus:border-[#97a09f]"
         disabled={isLoading}
       />
-      <Button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white" disabled={isLoading}>
+      <Button type="submit" className="w-full bg-[#97a09f] hover:bg-[#a6aea9] text-[#d5d9c8]" disabled={isLoading}>
         {isLoading ? 'Registrerar...' : 'Anslut till äventyret'}
       </Button>
     </form>
