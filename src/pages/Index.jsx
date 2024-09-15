@@ -7,8 +7,8 @@ const Index = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#d5d9c8] to-[#97a09f]">
       <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-50"
-        style={{ backgroundImage: 'url(https://i.imgur.com/mTlhsuD.jpeg)' }}
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70"
+        style={{ backgroundImage: 'url(https://i.imgur.com/K7zwCBV.jpeg)' }}
       />
       <div className="absolute top-4 right-4 z-20">
         <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 h-auto" />
@@ -26,7 +26,7 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="text-center p-8 bg-[#c5cabd]/20 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8"
+            className="text-center p-8 bg-[#c5cabd]/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
