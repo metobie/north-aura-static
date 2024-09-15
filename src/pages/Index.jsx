@@ -7,7 +7,7 @@ const Index = () => {
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-teal-500 to-purple-600">
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-50"
-        style={{ backgroundImage: 'url(https://i.imgur.com/Pe1ftIK.jpeg)' }}
+        style={{ backgroundImage: 'url(https://i.imgur.com/mTlhsuD.jpeg)' }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
