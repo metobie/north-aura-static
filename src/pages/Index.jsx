@@ -7,14 +7,14 @@ const Index = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <div 
-        className="absolute top-0 left-0 w-[120%] h-[120%] bg-cover bg-center bg-no-repeat opacity-60 animate-pan"
+        className="absolute top-0 left-0 w-[120%] h-[120%] bg-cover bg-center bg-no-repeat opacity-70 animate-pan"
         style={{ 
           backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
           animation: 'pan 40s linear infinite',
         }}
       />
       <div 
-        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#d5d9c8] to-[#97a09f] opacity-70 animate-gradient"
+        className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#d5d9c8] to-[#97a09f] opacity-60 animate-gradient"
         style={{
           animation: 'gradient 15s ease infinite',
         }}
@@ -35,7 +35,7 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="text-center p-8 bg-[#c5cabd]/60 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8"
+            className="text-center p-8 bg-[#c5cabd]/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
