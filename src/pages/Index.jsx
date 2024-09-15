@@ -9,6 +9,9 @@ const Index = () => {
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-50"
         style={{ backgroundImage: 'url(https://i.imgur.com/mTlhsuD.jpeg)' }}
       />
+      <div className="absolute top-4 left-4 z-20">
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 h-auto" />
+      </div>
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
           <div className="text-center p-8 bg-[#c5cabd]/20 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
