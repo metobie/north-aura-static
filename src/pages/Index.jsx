@@ -10,6 +10,7 @@ const Index = () => {
         style={{ backgroundImage: 'url(https://i.imgur.com/mTlhsuD.jpeg)' }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-48 mb-8 mx-auto object-cover" />
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
           <div className="text-center p-8 bg-[#c5cabd]/20 backdrop-blur-sm rounded-lg shadow-xl w-full lg:w-1/2 mb-8 lg:mb-0 animate-float">
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide">Overland Soul</h1>
