@@ -93,19 +93,19 @@ const Index = () => {
         </motion.div>
       </motion.div>
       <motion.div 
-        className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4"
+        className="absolute bottom-8 left-0 right-0 flex justify-center space-x-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Facebook size={24} />
+          <Facebook size={32} />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Instagram size={24} />
+          <Instagram size={32} />
         </a>
         <a href="mailto:hej@overlandsoul.se" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Mail size={24} />
+          <Mail size={32} />
         </a>
       </motion.div>
     </div>
