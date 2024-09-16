@@ -14,12 +14,12 @@ const Index = () => {
           }
           .background-pan {
             animation: panBackground 60s linear infinite alternate;
-            background-image: url(https://i.imgur.com/5cPVzTo.jpeg);
+            background-image: url(https://i.imgur.com/9l0ugA8.jpeg);
+            background-size: cover;
           }
           @media (max-width: 640px) {
             .background-pan {
               animation-duration: 180s;
-              background-image: url(https://i.imgur.com/mTlhsuD.jpeg);
             }
           }
         `}
