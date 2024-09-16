@@ -27,11 +27,11 @@ const Index = () => {
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70 background-pan"
       />
-      <div className="absolute top-0 left-0 w-full flex justify-center sm:justify-end p-4 z-20">
-        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-24 sm:w-32 h-auto" />
+      <div className="absolute top-4 right-4 z-20">
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-12 sm:w-32 h-auto" />
       </div>
       <motion.div 
-        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12 mt-16 sm:mt-0"
+        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
