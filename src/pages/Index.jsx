@@ -14,20 +14,18 @@ const Index = () => {
           }
           .background-pan {
             animation: panBackground 60s linear infinite alternate;
+            background-image: url(https://i.imgur.com/5cPVzTo.jpeg);
           }
           @media (max-width: 640px) {
             .background-pan {
               animation-duration: 180s;
+              background-image: url(https://i.imgur.com/mTlhsuD.jpeg);
             }
           }
         `}
       </style>
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70 background-pan"
-        style={{ 
-          backgroundImage: 'url(https://i.imgur.com/5cPVzTo.jpeg)',
-          backgroundSize: 'cover',
-        }}
       />
       <div className="absolute top-4 right-4 z-20">
         <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-12 sm:w-32 h-auto" />
