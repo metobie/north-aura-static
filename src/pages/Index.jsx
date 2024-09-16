@@ -19,11 +19,11 @@ const Index = () => {
         style={{ 
           backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
           animation: 'panBackground 60s linear infinite alternate',
-          backgroundSize: '120% auto'
+          backgroundSize: 'cover', // Changed to 'cover' to ensure full coverage on all devices
         }}
       />
       <div className="absolute top-4 right-4 z-20">
-        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-32 h-auto" />
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-16 sm:w-32 h-auto" /> {/* Reduced size for mobile */}
       </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
@@ -99,13 +99,13 @@ const Index = () => {
         transition={{ duration: 0.5, delay: 1 }}
       >
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Facebook size={32} />
+          <Facebook size={40} />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Instagram size={32} />
+          <Instagram size={40} />
         </a>
         <a href="mailto:hej@overlandsoul.se" className="text-white hover:text-[#d5d9c8] transition-colors duration-300">
-          <Mail size={32} />
+          <Mail size={40} />
         </a>
       </motion.div>
     </div>
