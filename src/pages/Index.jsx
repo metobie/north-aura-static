@@ -12,18 +12,25 @@ const Index = () => {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 0%; }
           }
+          .background-pan {
+            animation: panBackground 60s linear infinite alternate;
+          }
+          @media (max-width: 640px) {
+            .background-pan {
+              animation-duration: 180s;
+            }
+          }
         `}
       </style>
       <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70"
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-70 background-pan"
         style={{ 
-          backgroundImage: 'url(https://i.imgur.com/9l0ugA8.jpeg)',
-          animation: 'panBackground 60s linear infinite alternate',
-          backgroundSize: 'cover', // Changed to 'cover' to ensure full coverage on all devices
+          backgroundImage: 'url(https://i.imgur.com/5cPVzTo.jpeg)',
+          backgroundSize: 'cover',
         }}
       />
       <div className="absolute top-4 right-4 z-20">
-        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-16 sm:w-32 h-auto" /> {/* Reduced size for mobile */}
+        <img src="https://i.imgur.com/wBONmmz.png" alt="Overland Soul Logo" className="w-12 sm:w-32 h-auto" />
       </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
