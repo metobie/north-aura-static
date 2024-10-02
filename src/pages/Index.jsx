@@ -48,7 +48,7 @@ const Index = () => {
               North Aura
             </motion.h1>
             <motion.p 
-              className="text-base text-white mb-8"
+              className="text-base font-bold text-white mb-8"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -56,7 +56,7 @@ const Index = () => {
               Vi är glada att du har hittat till North Aura och ser fram emot att välkomna dig till vår gemenskap.
             </motion.p>
             <motion.p 
-              className="text-base text-white mb-8"
+              className="text-sm text-white mb-8"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -64,7 +64,7 @@ const Index = () => {
               North Aura grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på biltaket. Nu vill vi dela denna frihet och upplevelse med dig genom våra taktält, Overland Soul – och samtidigt bidra till en hållbar framtid.
             </motion.p>
             <motion.p 
-              className="text-base text-white mb-8"
+              className="text-sm text-white mb-8"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
