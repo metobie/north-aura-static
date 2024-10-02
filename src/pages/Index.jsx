@@ -53,7 +53,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Välkommen till North Aura, där hållbar framtid möter frihet. Vi är två familjer som lever ett rent och själsligt liv, där äkthet och nuet står i centrum.
+              Vi är glada att du har hittat till North Aura och ser fram emot att välkomna dig till vår gemenskap.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -61,7 +61,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              Våra Overland Soul tält är mer än bara ett hem på biltaket - de är en portal till nya upplevelser som berikar våra sinnen och skapar bestående minnen. Att upptäcka nya platser är för oss en fantastisk resa för själen.
+              North Aura grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på biltaket. Nu vill vi dela denna frihet och upplevelse med dig genom våra taktält, Overland Soul – och samtidigt bidra till en hållbar framtid.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -69,7 +69,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Med Overland Soul omfamnar du friheten att utforska världen samtidigt som du lever i harmoni med naturen. Varje morgon vaknar du upp till nya vyer, nya dofter och nya möjligheter att leva fullt ut i nuet.
+              Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.
             </motion.p>
             <motion.p 
               className="text-lg font-semibold text-white mb-8 border-2 border-white p-4 rounded-lg inline-block"
