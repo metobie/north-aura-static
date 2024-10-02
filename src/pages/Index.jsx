@@ -2,7 +2,7 @@ import React from 'react';
 import EmailSignup from '../components/EmailSignup';
 import { Instagram, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
-import '../styles/custom.css'; // Import the new CSS file
+import '../styles/custom.css';
 
 const Index = () => {
   return (
@@ -40,7 +40,7 @@ const Index = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <motion.h1 
-              className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-season" // Added font-the-season class
+              className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
