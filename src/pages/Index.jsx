@@ -20,7 +20,7 @@ const Index = () => {
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
       <div className="absolute top-4 right-4 z-20">
-        <img src="https://i.imgur.com/wBONmmz.png" alt="North Aura Logo" className="w-12 sm:w-32 h-auto" />
+        <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-12 sm:w-32 h-auto" />
       </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
