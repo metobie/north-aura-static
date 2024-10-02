@@ -25,7 +25,7 @@ const Index = () => {
         transition={{ duration: 0.5 }}
       >
         <motion.div 
-          className="w-full max-w-3xl"
+          className="w-full max-w-xl" // Changed from max-w-3xl to max-w-xl
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
