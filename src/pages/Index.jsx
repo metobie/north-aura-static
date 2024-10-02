@@ -100,7 +100,7 @@ const Index = () => {
           href="https://instagram.com/northaura.se" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-white hover:text-gray-300 transition-colors duration-300"
+          className="text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer"
           whileHover={{ scale: 1.2, rotate: 5 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -108,7 +108,7 @@ const Index = () => {
         </motion.a>
         <motion.a 
           href="mailto:hey@northaura.se" 
-          className="text-white hover:text-gray-300 transition-colors duration-300"
+          className="text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer"
           whileHover={{ scale: 1.2, rotate: -5 }}
           whileTap={{ scale: 0.9 }}
         >
