@@ -44,7 +44,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              North Aura
+              NORTH AURA
             </motion.h1>
             <motion.div
               className="flex justify-center space-x-4"
