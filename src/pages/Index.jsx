@@ -2,6 +2,7 @@ import React from 'react';
 import EmailSignup from '../components/EmailSignup';
 import { motion } from 'framer-motion';
 import '../styles/custom.css';
+import { Instagram, Mail } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -88,6 +89,14 @@ const Index = () => {
           </motion.div>
         </motion.div>
       </motion.div>
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4 z-20">
+        <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+          <Instagram className="w-6 h-6" />
+        </a>
+        <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors">
+          <Mail className="w-6 h-6" />
+        </a>
+      </div>
     </div>
   );
 };
