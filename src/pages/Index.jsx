@@ -54,17 +54,17 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="text-center p-8 bg-black/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
+            className="text-center p-8 bg-black/30 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex justify-center mb-4">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 sm:w-48 h-auto" />
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 sm:w-48 h-auto opacity-80" />
             </div>
             <motion.h1 
-              className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
+              className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons opacity-80"
               initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              animate={{ y: 0, opacity: 0.8 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               North Aura
@@ -72,13 +72,13 @@ const Index = () => {
             <motion.div
               className="flex justify-center space-x-4"
               initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              animate={{ y: 0, opacity: 0.8 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-80">
                 <Instagram size={24} />
               </a>
-              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors">
+              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors opacity-80">
                 <Mail size={24} />
               </a>
             </motion.div>
