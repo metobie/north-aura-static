@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 import '../styles/custom.css';
 
 const Index = () => {
@@ -52,14 +52,11 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <Twitter size={24} />
+              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors">
+                <Mail size={24} />
               </a>
             </motion.div>
           </motion.div>
