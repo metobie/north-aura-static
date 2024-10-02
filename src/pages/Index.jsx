@@ -12,6 +12,7 @@ const Index = () => {
         loop 
         muted 
         playsInline
+        crossOrigin="anonymous"
       >
         <source src="https://i.imgur.com/Q5ryltB.mp4" type="video/mp4" />
         Your browser does not support the video tag.
