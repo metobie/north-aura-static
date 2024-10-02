@@ -36,6 +36,7 @@ const Index = () => {
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
+            <div className="mb-8"></div> {/* Added line break before logo */}
             <div className="flex justify-center mb-4">
               <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
             </div>
@@ -47,6 +48,7 @@ const Index = () => {
             >
               North Aura
             </motion.h1>
+            <div className="mb-8"></div> {/* Added line break after heading */}
             <motion.p 
               className="text-base font-bold text-white mb-8"
               initial={{ y: 20, opacity: 0 }}
