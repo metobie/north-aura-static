@@ -5,7 +5,7 @@ import '../styles/custom.css';
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden flex flex-col">
       <video 
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay 
@@ -19,7 +19,7 @@ const Index = () => {
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
       <motion.div 
-        className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
+        className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -62,6 +62,16 @@ const Index = () => {
           </motion.div>
         </motion.div>
       </motion.div>
+      <footer className="relative z-10 w-full text-center py-2 bg-black bg-opacity-50">
+        <a 
+          href="https://enew-io.se" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-xs text-white opacity-50 hover:opacity-100 transition-opacity"
+        >
+          Built by Renew I/O
+        </a>
+      </footer>
     </div>
   );
 };
