@@ -77,7 +77,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Anmäl dig nu och bli en del av vår gemenskap. Få 10% rabatt på ditt första Overland Soul taktält när vi öppnar webbshoppen. Tillsammans skapar vi en framtid där äventyr och hållbarhet går hand i hand.
+              Anmäl dig nu och bli en del av vår gemenskap. Få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen. Tillsammans skapar vi en framtid där äventyr och hållbarhet går hand i hand.
             </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
