@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'The Season';
+  src: url('/fonts/TheSeason-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-the-season {
+  font-family: 'The Season', sans-serif;
+}
