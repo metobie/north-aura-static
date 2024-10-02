@@ -53,7 +53,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Välkommen till North Aura, där hållbar framtid möter frihet. Vi tror på att utforska världen på ett ansvarsfullt sätt och vill inspirera dig att göra detsamma.
+              Välkommen till North Aura, där hållbar framtid möter frihet. Vi är två familjer som lever ett rent och själsligt liv, där äkthet och nuet står i centrum.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -61,7 +61,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              Våra Overland Soul tält är designade för att ge dig friheten att utforska, samtidigt som de minimerar din påverkan på miljön. Med ett hem på biltaket kan du enkelt upptäcka nya platser och skapa minnen som varar livet ut.
+              Våra Overland Soul tält är mer än bara ett hem på biltaket - de är en portal till nya upplevelser som berikar våra sinnen och skapar bestående minnen. Att upptäcka nya platser är för oss en fantastisk resa för själen.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -69,7 +69,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Genom att välja Overland Soul tar du ett steg mot en mer hållbar livsstil utan att kompromissa med äventyret. Upplev friheten att resa med gott samvete och vakna upp till naturens skönhet varje morgon.
+              Med Overland Soul omfamnar du friheten att utforska världen samtidigt som du lever i harmoni med naturen. Varje morgon vaknar du upp till nya vyer, nya dofter och nya möjligheter att leva fullt ut i nuet.
             </motion.p>
             <motion.p 
               className="text-lg font-semibold text-white mb-8 border-2 border-white p-4 rounded-lg inline-block"
@@ -77,7 +77,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Anmäl dig nu och få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen. Låt oss tillsammans skapa en hållbar framtid full av äventyr!
+              Anmäl dig nu och bli en del av vår gemenskap. Få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen. Tillsammans skapar vi en framtid där äventyr och hållbarhet går hand i hand.
             </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
