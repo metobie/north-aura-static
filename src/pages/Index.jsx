@@ -40,10 +40,11 @@ const Index = () => {
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            {/* Logo for larger screens */}
-            <div className="hidden sm:flex sm:justify-end sm:mb-4">
+            {/* Logo for larger screens, now centered */}
+            <div className="hidden sm:flex sm:justify-center sm:mb-4">
               <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 h-auto" />
             </div>
+            {/* Rest of the component remains unchanged */}
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
               initial={{ y: -20, opacity: 0 }}
