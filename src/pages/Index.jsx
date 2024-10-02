@@ -36,7 +36,7 @@ const Index = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex justify-center mb-4">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 sm:w-48 h-auto" />
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
