@@ -64,7 +64,7 @@ const Index = () => {
       </motion.div>
       <footer className="relative z-10 w-full text-center py-2 bg-black bg-opacity-50">
         <a 
-          href="https://enew-io.se" 
+          href="https://renew-io.se" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-xs text-white opacity-50 hover:opacity-100 transition-opacity"
