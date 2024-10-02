@@ -33,7 +33,7 @@ const Index = () => {
         >
           {/* Logo positioned above the card on mobile */}
           <div className="flex justify-center mb-4 sm:hidden">
-            <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 h-auto" />
+            <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 h-auto" />
           </div>
           <motion.div 
             className="text-center p-8 bg-black/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
