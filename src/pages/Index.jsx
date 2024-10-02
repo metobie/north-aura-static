@@ -19,8 +19,8 @@ const Index = () => {
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
-      <div className="absolute top-4 right-4 z-20">
-        <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-12 sm:w-32 h-auto" />
+      <div className="absolute top-4 left-0 right-0 flex justify-center sm:justify-end sm:right-4 z-20">
+        <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
       </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
