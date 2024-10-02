@@ -53,7 +53,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Vi är glada att du har hittat till North Aura och ser fram emot att välkomna dig till vår gemenskap.
+              Välkommen till North Aura, där vi förenar äventyrslust med miljömedvetenhet. Vi är glada att du har hittat hit och ser fram emot att välkomna dig till vår gemenskap av hållbara resenärer.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -61,7 +61,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              North Aura grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började med Overland Soul tält, som tog oss till nya platser med vårt hem på biltaket. Nu vill vi dela denna frihet och upplevelse med dig.
+              North Aura grundades av två familjer med en passion för äventyr och en vision om en mer hållbar framtid. Vår resa började med Overland Soul tält, som inte bara tar oss till nya platser med vårt hem på biltaket, utan också minimerar vår miljöpåverkan. Nu vill vi dela denna ekologiskt medvetna frihet och upplevelse med dig.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -69,7 +69,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta med våra Overland Soul tält.
+              Vi värdesätter närheten till naturen och friheten att utforska världen på ett ansvarsfullt sätt. Genom att välja Overland Soul tält bidrar du till en mer hållbar resekultur. Våra tält är designade för minimal miljöpåverkan, samtidigt som de ger dig möjligheten att uppleva naturens under på nära håll - kanske med en havsutsikt som granne. För oss är detta inte bara lyx i vardagen, utan ett steg mot en grönare framtid.
             </motion.p>
             <motion.p 
               className="text-lg font-semibold text-white mb-8 border-2 border-white p-4 rounded-lg inline-block"
@@ -77,7 +77,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Signa upp nu och få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen
+              Anmäl dig nu och få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen. Tillsammans kan vi utforska världen på ett mer hållbart sätt!
             </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
