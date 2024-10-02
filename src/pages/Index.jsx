@@ -95,12 +95,24 @@ const Index = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <a href="https://instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300">
+        <motion.a 
+          href="https://instagram.com/northaura.se" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white hover:text-gray-300 transition-colors duration-300"
+          whileHover={{ scale: 1.2, rotate: 5 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <Instagram size={40} />
-        </a>
-        <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors duration-300">
+        </motion.a>
+        <motion.a 
+          href="mailto:hey@northaura.se" 
+          className="text-white hover:text-gray-300 transition-colors duration-300"
+          whileHover={{ scale: 1.2, rotate: -5 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <Mail size={40} />
-        </a>
+        </motion.a>
       </motion.div>
     </div>
   );
