@@ -1,8 +1,6 @@
 import React from 'react';
-import EmailSignup from '../components/EmailSignup';
 import { motion } from 'framer-motion';
 import '../styles/custom.css';
-import { Instagram, Mail } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -47,56 +45,9 @@ const Index = () => {
             >
               North Aura
             </motion.h1>
-            <motion.p 
-              className="text-base font-bold text-white mb-8"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              Vi är glada att du har hittat till North Aura och ser fram emot att välkomna dig till vår gemenskap.
-            </motion.p>
-            <motion.p 
-              className="text-sm text-white mb-8"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              North Aura grundades av två äventyrsälskande familjer som ville dela sin passion med världen. Vår resa började i taktält, som tog oss till nya platser med vårt hem på biltaket. Nu vill vi dela denna frihet och upplevelse med dig genom våra taktält, Overland Soul – och samtidigt bidra till en hållbar framtid.
-            </motion.p>
-            <motion.p 
-              className="text-sm text-white mb-8"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              Vi värderar närheten till naturen och friheten att stanna var helst hjärtat leder oss – kanske med en havsutsikt som sällskap. För oss är det en lyx i vardagen, en chans till återhämtning och ett sätt att uppleva världen. Vi hoppas att du också får uppleva detta.
-            </motion.p>
-            <motion.p 
-              className="text-lg font-semibold text-white mb-8 border-2 border-white p-4 rounded-lg inline-block"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-            >
-              Anmäl dig nu och bli en del av vår gemenskap. Få 10% rabatt på ditt första Overland Soul tält när vi öppnar webbshoppen.
-            </motion.p>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              <EmailSignup />
-            </motion.div>
           </motion.div>
         </motion.div>
       </motion.div>
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4 z-20">
-        <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-          <Instagram className="w-6 h-6" />
-        </a>
-        <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors">
-          <Mail className="w-6 h-6" />
-        </a>
-      </div>
     </div>
   );
 };
