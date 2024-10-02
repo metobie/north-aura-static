@@ -45,11 +45,11 @@ const EmailSignup = () => {
         placeholder="Ange din e-postadress"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full sm:w-2/3 bg-white/50 text-[#97a09f] placeholder-[#97a09f] border-[#97a09f] focus:border-[#97a09f] focus:ring-0 focus:outline-none"
+        className="w-full sm:w-2/3 bg-white/20 text-white placeholder-white/70 border-white/30 focus:border-white focus:ring-0 focus:outline-none"
         disabled={isLoading}
       />
-      <Button type="submit" className="w-full sm:w-1/3 bg-[#97a09f] hover:bg-[#a6aea9] text-white" disabled={isLoading}>
-        {isLoading ? 'Registrerar...' : 'Anslut till äventyret'}
+      <Button type="submit" className="w-full sm:w-1/3 bg-white text-black hover:bg-gray-200" disabled={isLoading}>
+        {isLoading ? 'Registrerar...' : 'Anslut till North Aura'}
       </Button>
     </form>
   );
