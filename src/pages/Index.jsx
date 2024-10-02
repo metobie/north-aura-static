@@ -31,18 +31,14 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {/* Logo positioned above the card on mobile */}
-          <div className="flex justify-center mb-4 sm:hidden">
-            <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 h-auto" />
-          </div>
           <motion.div 
             className="text-center p-8 bg-black/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            {/* Logo for larger screens, now centered */}
-            <div className="hidden sm:flex sm:justify-center sm:mb-4">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 h-auto" />
+            {/* Logo centered for both mobile and desktop */}
+            <div className="flex justify-center mb-4">
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
             </div>
             {/* Rest of the component remains unchanged */}
             <motion.h1 
