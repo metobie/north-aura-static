@@ -40,7 +40,6 @@ const Index = () => {
             <div className="flex justify-center mb-4">
               <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
             </div>
-            {/* Rest of the component remains unchanged */}
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
               initial={{ y: -20, opacity: 0 }}
