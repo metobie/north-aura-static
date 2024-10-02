@@ -3,6 +3,7 @@
   src: url('/Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .font-the-seasons {
