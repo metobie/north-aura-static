@@ -19,9 +19,6 @@ const Index = () => {
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
-      <div className="absolute top-4 left-0 right-0 flex justify-center sm:justify-end sm:right-4 z-20">
-        <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
-      </div>
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12"
         initial={{ opacity: 0 }}
@@ -34,11 +31,19 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          {/* Logo positioned above the card on mobile */}
+          <div className="flex justify-center mb-4 sm:hidden">
+            <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 h-auto" />
+          </div>
           <motion.div 
             className="text-center p-8 bg-black/40 backdrop-blur-sm rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
+            {/* Logo for larger screens */}
+            <div className="hidden sm:flex sm:justify-end sm:mb-4">
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 h-auto" />
+            </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
               initial={{ y: -20, opacity: 0 }}
