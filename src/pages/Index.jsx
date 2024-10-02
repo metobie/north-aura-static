@@ -13,17 +13,21 @@ const Index = () => {
     const handleTimeUpdate = () => {
       if (forward && video.currentTime >= video.duration - 0.1) {
         forward = false;
-        video.playbackRate = -1;
       } else if (!forward && video.currentTime <= 0.1) {
         forward = true;
-        video.playbackRate = 1;
+      }
+
+      if (forward) {
+        video.currentTime += 0.01;
+      } else {
+        video.currentTime -= 0.01;
       }
     };
 
-    video.addEventListener('timeupdate', handleTimeUpdate);
+    const intervalId = setInterval(handleTimeUpdate, 16); // ~60fps
 
     return () => {
-      video.removeEventListener('timeupdate', handleTimeUpdate);
+      clearInterval(intervalId);
     };
   }, []);
 
@@ -32,7 +36,6 @@ const Index = () => {
       <video 
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay 
         muted 
         playsInline
         crossOrigin="anonymous"
