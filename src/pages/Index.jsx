@@ -1,6 +1,6 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
-import { Facebook, Instagram, Mail } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Index = () => {
@@ -93,13 +93,10 @@ const Index = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300">
-          <Facebook size={40} />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300">
+        <a href="https://instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300">
           <Instagram size={40} />
         </a>
-        <a href="mailto:hej@northaura.se" className="text-white hover:text-gray-300 transition-colors duration-300">
+        <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors duration-300">
           <Mail size={40} />
         </a>
       </motion.div>
