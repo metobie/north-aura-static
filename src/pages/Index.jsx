@@ -1,6 +1,5 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
-import { Instagram, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 import '../styles/custom.css';
 
@@ -88,31 +87,6 @@ const Index = () => {
             </motion.div>
           </motion.div>
         </motion.div>
-      </motion.div>
-      <motion.div 
-        className="absolute bottom-8 left-0 right-0 flex justify-center space-x-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
-      >
-        <motion.a 
-          href="https://instagram.com/northaura.se" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer"
-          whileHover={{ scale: 1.2, rotate: 5 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Instagram size={40} />
-        </motion.a>
-        <motion.a 
-          href="mailto:hey@northaura.se" 
-          className="text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer"
-          whileHover={{ scale: 1.2, rotate: -5 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Mail size={40} />
-        </motion.a>
       </motion.div>
     </div>
   );
