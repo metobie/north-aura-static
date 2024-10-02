@@ -53,7 +53,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Välkommen till North Aura, där vi förenar äventyrslust med miljömedvetenhet. Vi är glada att du har hittat hit och ser fram emot att välkomna dig till vår gemenskap av hållbara resenärer.
+              Välkommen till North Aura, där vi kombinerar äventyrslust med miljömedvetenhet. Vi är glada att du har hittat hit och ser fram emot att dela vår passion för hållbart resande med dig.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -61,7 +61,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              North Aura grundades av två familjer med en passion för äventyr och en vision om en mer hållbar framtid. Vår resa började med Overland Soul tält, som inte bara tar oss till nya platser med vårt hem på biltaket, utan också minimerar vår miljöpåverkan. Nu vill vi dela denna ekologiskt medvetna frihet och upplevelse med dig.
+              North Aura startades av två familjer som älskar äventyr och bryr sig om miljön. Vi började med Overland Soul tält, som gör det möjligt att utforska nya platser med ett hem på biltaket, samtidigt som vi tänker på vår påverkan på naturen.
             </motion.p>
             <motion.p 
               className="text-base text-white mb-8"
@@ -69,7 +69,7 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Vi värdesätter närheten till naturen och friheten att utforska världen på ett ansvarsfullt sätt. Genom att välja Overland Soul tält bidrar du till en mer hållbar resekultur. Våra tält är designade för minimal miljöpåverkan, samtidigt som de ger dig möjligheten att uppleva naturens under på nära håll - kanske med en havsutsikt som granne. För oss är detta inte bara lyx i vardagen, utan ett steg mot en grönare framtid.
+              Med Overland Soul tält kan du njuta av naturen på nära håll, kanske med en vacker utsikt som granne. Det är ett enkelt sätt att resa mer miljövänligt och uppleva friheten i att utforska världen på ett ansvarsfullt sätt.
             </motion.p>
             <motion.p 
               className="text-lg font-semibold text-white mb-8 border-2 border-white p-4 rounded-lg inline-block"
