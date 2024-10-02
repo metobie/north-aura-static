@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import '../styles/custom.css';
 
 const Index = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    let forward = true;
+
+    const handleTimeUpdate = () => {
+      if (forward && video.currentTime >= video.duration - 0.1) {
+        forward = false;
+        video.playbackRate = -1;
+      } else if (!forward && video.currentTime <= 0.1) {
+        forward = true;
+        video.playbackRate = 1;
+      }
+    };
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+    };
+  }, []);
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <video 
+        ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay 
-        loop 
         muted 
         playsInline
         crossOrigin="anonymous"
