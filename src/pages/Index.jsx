@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 import '../styles/custom.css';
 
 const Index = () => {
@@ -45,6 +46,22 @@ const Index = () => {
             >
               North Aura
             </motion.h1>
+            <motion.div
+              className="flex justify-center space-x-4"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Facebook size={24} />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Instagram size={24} />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Twitter size={24} />
+              </a>
+            </motion.div>
           </motion.div>
         </motion.div>
       </motion.div>
