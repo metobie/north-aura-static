@@ -25,7 +25,7 @@ const Index = () => {
         transition={{ duration: 0.5 }}
       >
         <motion.div 
-          className="w-full max-w-xl" // Changed from max-w-3xl to max-w-xl
+          className="w-full max-w-xl"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -36,7 +36,7 @@ const Index = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex justify-center mb-4">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-32 sm:w-48 h-auto opacity-80" />
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80" />
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
