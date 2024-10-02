@@ -36,7 +36,6 @@ const Index = () => {
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            {/* Logo centered for both mobile and desktop */}
             <div className="flex justify-center mb-4">
               <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-24 sm:w-32 h-auto" />
             </div>
