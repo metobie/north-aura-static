@@ -2,9 +2,26 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import EmailSignup from '../components/EmailSignup';
+import LanguageToggle from '../components/LanguageToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 import '../styles/custom.css';
 
 const Index = () => {
+  const { language } = useLanguage();
+
+  const content = {
+    sv: {
+      title: 'Omfamna North Aura',
+      description: 'Anslut dig till oss runt lägerelden och upplev friheten med taktältscamping. För 10% på våra Overland Soul taktält, registrera dig för vårt nyhetsbrev och var först med att få veta om våra kommande äventyr.',
+      footer: 'Designad av Renew I/O'
+    },
+    en: {
+      title: 'Embrace North Aura',
+      description: 'Join us around the campfire and experience the freedom of rooftop tent camping. Get 10% off our Overland Soul rooftop tents, sign up for our newsletter and be the first to know about our upcoming adventures.',
+      footer: 'Designed by Renew I/O'
+    }
+  };
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden flex flex-col">
       <video 
@@ -16,7 +33,7 @@ const Index = () => {
         crossOrigin="anonymous"
       >
         <source src="https://i.imgur.com/5ujcQaZ.mp4" type="video/mp4" />
-        Din webbläsare stöder inte videotaggen.
+        Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40" />
       <motion.div 
@@ -39,8 +56,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="sm:hidden">Omfamna<br />North Aura</span>
-          <span className="hidden sm:inline">Omfamna North Aura</span>
+          {content[language].title}
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-center max-w-2xl"
@@ -48,7 +64,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Anslut dig till oss runt lägerelden och upplev friheten med taktältscamping. För 10% på våra Overland Soul taktält, registrera dig för vårt nyhetsbrev och var först med att få veta om våra kommande äventyr.
+          {content[language].description}
         </motion.p>
         <motion.div
           className="w-full max-w-md"
@@ -72,6 +88,7 @@ const Index = () => {
           </a>
         </motion.div>
       </motion.div>
+      <LanguageToggle className="absolute top-4 right-4 z-20" />
       <footer className="relative z-10 w-full text-center py-4">
         <a 
           href="https://renew-io.se" 
@@ -79,7 +96,7 @@ const Index = () => {
           rel="noopener noreferrer" 
           className="text-sm text-white opacity-70 hover:opacity-100 transition-opacity"
         >
-          Designad av Renew I/O
+          {content[language].footer}
         </a>
       </footer>
     </div>
