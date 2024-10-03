@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import EmailSignup from '../components/EmailSignup';
 import '../styles/custom.css';
 
 const Index = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className="relative min-h-screen w-full overflow-hidden flex flex-col">
       <video 
@@ -15,85 +13,61 @@ const Index = () => {
         loop 
         muted 
         playsInline
-        crossOrigin="anonymous"
       >
         <source src="https://i.imgur.com/wYeXk1b.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40" />
       <motion.div 
-        className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 py-12"
+        className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 py-12 text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
       >
-        <motion.div 
-          className="w-full max-w-xl"
-          initial={{ y: 50, opacity: 0 }}
+        <motion.h1 
+          className="text-4xl sm:text-5xl font-bold mb-4 text-center font-the-seasons"
+          initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.div 
-            className="text-center p-8 bg-white/20 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/30"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            onHoverStart={() => setIsHovered(true)}
-            onHoverEnd={() => setIsHovered(false)}
-          >
-            <div className="flex justify-center mb-4 relative">
-              <motion.img 
-                src="https://i.imgur.com/YFxUVEp.png" 
-                alt="North Aura Logo" 
-                className="w-40 sm:w-56 h-auto opacity-90 relative z-10"
-                animate={{ rotate: isHovered ? 360 : 0 }}
-                transition={{ duration: 2, ease: "easeInOut" }}
-              />
-            </div>
-            <motion.h1 
-              className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              North Aura
-            </motion.h1>
-            <motion.p
-              className="text-white text-lg mb-6"
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              Experience the magic of Overland Soul
-            </motion.p>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              <EmailSignup />
-            </motion.div>
-            <motion.div
-              className="flex justify-center space-x-4 mt-6"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-90">
-                <Instagram size={24} />
-              </a>
-              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors opacity-90">
-                <Mail size={24} />
-              </a>
-            </motion.div>
-          </motion.div>
+          Embrace the Overland Spirit
+        </motion.h1>
+        <motion.p
+          className="text-xl mb-8 text-center max-w-2xl"
+          initial={{ y: -30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          Join us around the campfire and experience the freedom of rooftop camping. Sign up for our newsletter and be the first to know about our upcoming adventures.
+        </motion.p>
+        <motion.div
+          className="w-full max-w-md"
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <EmailSignup />
+        </motion.div>
+        <motion.div
+          className="flex justify-center space-x-6 mt-8"
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+            <Instagram size={28} />
+          </a>
+          <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors">
+            <Mail size={28} />
+          </a>
         </motion.div>
       </motion.div>
-      <footer className="relative z-10 w-full text-center py-2 bg-black bg-opacity-30">
+      <footer className="relative z-10 w-full text-center py-4">
         <a 
           href="https://renew-io.se" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-xs text-white opacity-60 hover:opacity-100 transition-opacity"
+          className="text-sm text-white opacity-70 hover:opacity-100 transition-opacity"
         >
           Designed by Renew I/O
         </a>
