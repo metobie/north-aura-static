@@ -30,10 +30,10 @@ const EmailSignup = () => {
         placeholder="Ange din e-postadress"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full sm:w-2/3 bg-white/20 text-white placeholder-white/70 border-white/30 focus:border-white focus:ring-0 focus:outline-none"
+        className="w-full sm:w-2/3 bg-white/80 text-black placeholder-gray-500 border-white/30 focus:border-white focus:ring-2 focus:ring-white shadow-md"
         disabled={isLoading}
       />
-      <Button type="submit" className="w-full sm:w-1/3 bg-white text-black hover:bg-gray-200" disabled={isLoading}>
+      <Button type="submit" className="w-full sm:w-1/3 bg-black text-white hover:bg-gray-800" disabled={isLoading}>
         {isLoading ? 'Ansluter...' : 'Anslut till resan'}
       </Button>
     </form>
