@@ -15,15 +15,15 @@
     rgba(255, 255, 255, 0.1) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  animation: shimmer 2s infinite;
+  animation: shimmer 3s infinite;
   transform: rotate(30deg);
 }
 
 @keyframes shimmer {
   0% {
-    transform: translateY(-100%) rotate(30deg);
+    transform: translate(-100%, -100%) rotate(30deg);
   }
   100% {
-    transform: translateY(100%) rotate(30deg);
+    transform: translate(100%, 100%) rotate(30deg);
   }
 }

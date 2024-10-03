@@ -32,15 +32,12 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/20"
+            className="shimmer-container text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/20"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex justify-center mb-4 relative">
-              <div className="shimmer-container">
-                <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80 relative z-10" />
-                <div className="shimmer"></div>
-              </div>
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80 relative z-10" />
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
@@ -71,6 +68,7 @@ const Index = () => {
                 <Mail size={24} />
               </a>
             </motion.div>
+            <div className="shimmer"></div>
           </motion.div>
         </motion.div>
       </motion.div>
