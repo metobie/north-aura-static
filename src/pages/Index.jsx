@@ -14,7 +14,7 @@ const Index = () => {
         muted 
         playsInline
       >
-        <source src="https://i.imgur.com/wYeXk1b.mp4" type="video/mp4" />
+        <source src="https://i.imgur.com/5ujcQaZ.mp4" type="video/mp4" />
         Din webbläsare stöder inte videotaggen.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40" />
