@@ -15,7 +15,7 @@ const Index = () => {
         playsInline
       >
         <source src="https://i.imgur.com/wYeXk1b.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Din webbläsare stöder inte videotaggen.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40" />
       <motion.div 
@@ -30,7 +30,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Embrace the Overland Spirit
+          Omfamna Overland-andan
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-center max-w-2xl"
@@ -38,7 +38,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Join us around the campfire and experience the freedom of rooftop camping. Sign up for our newsletter and be the first to know about our upcoming adventures.
+          Anslut dig till oss runt lägerelden och upplev friheten med taktältscamping. Registrera dig för vårt nyhetsbrev och var först med att få veta om våra kommande äventyr.
         </motion.p>
         <motion.div
           className="w-full max-w-md"
@@ -69,7 +69,7 @@ const Index = () => {
           rel="noopener noreferrer" 
           className="text-sm text-white opacity-70 hover:opacity-100 transition-opacity"
         >
-          Designed by Renew I/O
+          Designad av Renew I/O
         </a>
       </footer>
     </div>
