@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import EmailSignup from '../components/EmailSignup';
 import LanguageToggle from '../components/LanguageToggle';
@@ -50,22 +50,30 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         />
-        <motion.h1 
-          className="text-4xl sm:text-5xl font-bold mb-4 text-center font-the-seasons"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          {content[language].title}
-        </motion.h1>
-        <motion.p
-          className="text-xl mb-8 text-center max-w-2xl"
-          initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          {content[language].description}
-        </motion.p>
+        <AnimatePresence mode="wait">
+          <motion.h1 
+            key={language}
+            className="text-4xl sm:text-5xl font-bold mb-4 text-center font-the-seasons"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+          >
+            {content[language].title}
+          </motion.h1>
+        </AnimatePresence>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={language}
+            className="text-xl mb-8 text-center max-w-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            {content[language].description}
+          </motion.p>
+        </AnimatePresence>
         <motion.div
           className="w-full max-w-md"
           initial={{ y: 30, opacity: 0 }}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
@@ -44,21 +45,43 @@ const EmailSignup = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-4">
-      <Input
-        type="email"
-        placeholder={content[language].placeholder}
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className="w-full sm:w-2/3 bg-white/80 text-black placeholder-gray-500 border-white/30 focus:border-white focus:ring-2 focus:ring-white shadow-md"
-        disabled={isLoading}
-      />
-      <Button 
-        type="submit" 
-        className="w-full sm:w-1/3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105" 
-        disabled={isLoading}
-      >
-        {isLoading ? content[language].loading : content[language].button}
-      </Button>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={language}
+          className="w-full sm:w-2/3"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Input
+            type="email"
+            placeholder={content[language].placeholder}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full bg-white/80 text-black placeholder-gray-500 border-white/30 focus:border-white focus:ring-2 focus:ring-white shadow-md"
+            disabled={isLoading}
+          />
+        </motion.div>
+      </AnimatePresence>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={language}
+          className="w-full sm:w-1/3"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Button 
+            type="submit" 
+            className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105" 
+            disabled={isLoading}
+          >
+            {isLoading ? content[language].loading : content[language].button}
+          </Button>
+        </motion.div>
+      </AnimatePresence>
     </form>
   );
 };
