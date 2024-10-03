@@ -24,6 +24,14 @@ const Index = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
+        <motion.img
+          src="/logo.png"
+          alt="North Aura Logo"
+          className="w-32 h-32 mb-8"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        />
         <motion.h1 
           className="text-4xl sm:text-5xl font-bold mb-4 text-center font-the-seasons"
           initial={{ y: -50, opacity: 0 }}
