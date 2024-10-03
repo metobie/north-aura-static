@@ -69,7 +69,7 @@ const Index = () => {
           rel="noopener noreferrer" 
           className="text-xs text-white opacity-50 hover:opacity-100 transition-opacity"
         >
-          Built by Renew I/O
+          Designed by Renew I/O
         </a>
       </footer>
     </div>
