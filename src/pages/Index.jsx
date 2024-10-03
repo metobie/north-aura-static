@@ -31,7 +31,7 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300"
+            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/20"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
