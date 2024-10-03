@@ -33,7 +33,11 @@ const EmailSignup = () => {
         className="w-full sm:w-2/3 bg-white/80 text-black placeholder-gray-500 border-white/30 focus:border-white focus:ring-2 focus:ring-white shadow-md"
         disabled={isLoading}
       />
-      <Button type="submit" className="w-full sm:w-1/3 bg-black text-white hover:bg-gray-800" disabled={isLoading}>
+      <Button 
+        type="submit" 
+        className="w-full sm:w-1/3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105" 
+        disabled={isLoading}
+      >
         {isLoading ? 'Ansluter...' : 'Anslut till resan'}
       </Button>
     </form>
