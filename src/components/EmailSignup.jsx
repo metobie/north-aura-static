@@ -2,37 +2,22 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import { useNavigate } from 'react-router-dom';
 
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (email) {
       setIsLoading(true);
-      try {
-        const response = await fetch('http://localhost:3001/api/register', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ email }),
-        });
-        
-        if (response.ok) {
-          toast.success("Tack för din registrering!");
-          navigate('/confirmation');
-        } else {
-          throw new Error('Registrering misslyckades');
-        }
-      } catch (error) {
-        toast.error("Ett fel uppstod. Försök igen senare.");
-      } finally {
+      // Here you would typically integrate with your backend or Mailchimp API
+      // For now, we'll simulate an API call
+      setTimeout(() => {
+        toast.success("Tack för din registrering!");
+        setEmail('');
         setIsLoading(false);
-      }
+      }, 1000);
     } else {
       toast.error("Vänligen ange en giltig e-postadress.");
     }

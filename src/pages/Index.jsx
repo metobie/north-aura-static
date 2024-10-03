@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
+import EmailSignup from '../components/EmailSignup';
 import '../styles/custom.css';
 
 const Index = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden flex flex-col">
       <video 
@@ -32,11 +35,19 @@ const Index = () => {
         >
           <motion.div 
             className="text-center p-8 bg-white/20 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/30"
-            whileHover={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
+            onHoverStart={() => setIsHovered(true)}
+            onHoverEnd={() => setIsHovered(false)}
           >
             <div className="flex justify-center mb-4 relative">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-90 relative z-10" />
+              <motion.img 
+                src="https://i.imgur.com/YFxUVEp.png" 
+                alt="North Aura Logo" 
+                className="w-40 sm:w-56 h-auto opacity-90 relative z-10"
+                animate={{ rotate: isHovered ? 360 : 0 }}
+                transition={{ duration: 2, ease: "easeInOut" }}
+              />
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
@@ -52,13 +63,20 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Coming Soon...
+              Experience the magic of Overland Soul
             </motion.p>
             <motion.div
-              className="flex justify-center space-x-4"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              <EmailSignup />
+            </motion.div>
+            <motion.div
+              className="flex justify-center space-x-4 mt-6"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
             >
               <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-90">
                 <Instagram size={24} />
