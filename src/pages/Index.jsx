@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import '../styles/custom.css';
+import '../styles/shimmer.css';
 
 const Index = () => {
   return (
@@ -35,8 +36,11 @@ const Index = () => {
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <div className="flex justify-center mb-4">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80" />
+            <div className="flex justify-center mb-4 relative">
+              <div className="shimmer-container">
+                <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80 relative z-10" />
+                <div className="shimmer"></div>
+              </div>
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
