@@ -25,7 +25,7 @@ const Index = () => {
         transition={{ duration: 1 }}
       >
         <motion.img
-          src="/logo.png"
+          src="https://i.imgur.com/YFxUVEp.png"
           alt="North Aura Logo"
           className="w-32 h-32 mb-8"
           initial={{ y: -50, opacity: 0 }}
