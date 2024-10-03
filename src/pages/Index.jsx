@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import '../styles/custom.css';
-import '../styles/shimmer.css';
 
 const Index = () => {
   return (
@@ -18,7 +17,7 @@ const Index = () => {
         <source src="https://i.imgur.com/wYeXk1b.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30" />
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 py-12"
         initial={{ opacity: 0 }}
@@ -32,12 +31,12 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div 
-            className="shimmer-container text-center p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/20"
+            className="text-center p-8 bg-white/20 backdrop-blur-md rounded-lg shadow-xl w-full mb-8 sm:hover:scale-105 transition-transform duration-300 border border-white/30"
             whileHover={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex justify-center mb-4 relative">
-              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80 relative z-10" />
+              <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-90 relative z-10" />
             </div>
             <motion.h1 
               className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
@@ -61,23 +60,22 @@ const Index = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-80">
+              <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-90">
                 <Instagram size={24} />
               </a>
-              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors opacity-80">
+              <a href="mailto:hey@northaura.se" className="text-white hover:text-gray-300 transition-colors opacity-90">
                 <Mail size={24} />
               </a>
             </motion.div>
-            <div className="shimmer"></div>
           </motion.div>
         </motion.div>
       </motion.div>
-      <footer className="relative z-10 w-full text-center py-2 bg-black bg-opacity-50">
+      <footer className="relative z-10 w-full text-center py-2 bg-black bg-opacity-30">
         <a 
           href="https://renew-io.se" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-xs text-white opacity-50 hover:opacity-100 transition-opacity"
+          className="text-xs text-white opacity-60 hover:opacity-100 transition-opacity"
         >
           Designed by Renew I/O
         </a>
