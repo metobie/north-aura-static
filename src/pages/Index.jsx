@@ -38,8 +38,8 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="sm:hidden">Omfamna<br />Overland Soul</span>
-          <span className="hidden sm:inline">Omfamna Overland Soul</span>
+          <span className="sm:hidden">Omfamna<br />North Aura</span>
+          <span className="hidden sm:inline">Omfamna North Aura</span>
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-center max-w-2xl"
