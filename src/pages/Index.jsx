@@ -39,18 +39,26 @@ const Index = () => {
               <img src="https://i.imgur.com/YFxUVEp.png" alt="North Aura Logo" className="w-40 sm:w-56 h-auto opacity-80" />
             </div>
             <motion.h1 
-              className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-wide font-the-seasons"
+              className="text-3xl sm:text-4xl font-bold text-white mb-2 tracking-wide font-the-seasons"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               North Aura
             </motion.h1>
+            <motion.p
+              className="text-white text-lg mb-6"
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              Coming Soon...
+            </motion.p>
             <motion.div
               className="flex justify-center space-x-4"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               <a href="https://www.instagram.com/northaura.se" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors opacity-80">
                 <Instagram size={24} />
