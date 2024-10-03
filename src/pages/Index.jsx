@@ -30,7 +30,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Omfamna Overland-andan
+          Omfamna Overland Soul
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-center max-w-2xl"
@@ -38,7 +38,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Anslut dig till oss runt lägerelden och upplev friheten med taktältscamping. Registrera dig för vårt nyhetsbrev och var först med att få veta om våra kommande äventyr.
+          Upplev magin med våra Overland Soul taktält. Gå med i vår äventyrsgemenskap och omfamna friheten på de öppna vägarna. Snart lanserar vi...
         </motion.p>
         <motion.div
           className="w-full max-w-md"
