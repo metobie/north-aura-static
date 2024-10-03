@@ -13,6 +13,7 @@ const Index = () => {
         loop 
         muted 
         playsInline
+        crossOrigin="anonymous"
       >
         <source src="https://i.imgur.com/5ujcQaZ.mp4" type="video/mp4" />
         Din webbläsare stöder inte videotaggen.
