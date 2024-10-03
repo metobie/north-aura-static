@@ -30,7 +30,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Embrace the Overland Spirit
+          Upplev magin med våra Overland Soul taktält
         </motion.h1>
         <motion.p
           className="text-xl mb-8 text-center max-w-2xl"
@@ -38,7 +38,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Join us around the campfire and experience the freedom of rooftop camping. Sign up for our newsletter and be the first to know about our upcoming adventures.
+          Gå med i vår äventyrsgemenskap och omfamna friheten på de öppna vägarna. Snart lanserar vi...
         </motion.p>
         <motion.div
           className="w-full max-w-md"
