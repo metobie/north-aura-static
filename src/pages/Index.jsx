@@ -15,7 +15,7 @@ const Index = () => {
         playsInline
         crossOrigin="anonymous"
       >
-        <source src="https://i.imgur.com/Q5ryltB.mp4" type="video/mp4" />
+        <source src="https://i.imgur.com/wYeXk1b.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
